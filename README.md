@@ -1,5 +1,9 @@
 # ninja-jobs
 
+The project is tutored by Shaun (NetNinja.dev)
+
+Use Vue-Router 
+
 ## Project setup
 ```
 npm install
