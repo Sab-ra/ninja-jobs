@@ -4,6 +4,9 @@
     <p>The job ID is {{ id }}</p>
     <p>{{ job.details }}</p>
   </div>
+  <div v-else>
+    <p>Loading job details...</p>
+  </div>
 </template>
 
 <script>

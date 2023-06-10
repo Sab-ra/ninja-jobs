@@ -1,9 +1,14 @@
 <template>
   <h1>Jobs</h1>
-  <div v-for="job in jobs" v-bind:key="job.id" class="job">
-    <router-link v-bind:to="{ name: 'job_details', params: { id: job.id } }" >
-      <h2>{{ job.title }}</h2>
-    </router-link>
+  <div v-if="jobs.length">
+    <div v-for="job in jobs" v-bind:key="job.id" class="job">
+      <router-link v-bind:to="{ name: 'job_details', params: { id: job.id } }" >
+        <h2>{{ job.title }}</h2>
+      </router-link>
+    </div>
+  </div>
+  <div v-else>
+    <p>Jobs are loading...</p>
   </div>
 </template>
 
